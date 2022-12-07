@@ -1,5 +1,7 @@
 @import 'macro-css';
 @import 'scss/variables.scss';
+@import 'scss/forms.scss';
+@import 'scss/buttons.scss';
 
 body {
   margin: 0;
@@ -37,6 +39,5 @@ html {
   height: 40rem;
   background-color: black;
 
-  display: hidden;
   z-index: 9;
 }

@@ -1,0 +1,93 @@
+
+//modal-forms
+
+
+.modal {
+    min-height: 100vh;
+    min-width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, .7);
+    opacity: .3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--container {
+        margin: 0 auto;
+        padding: 25px;
+        
+        position: relative;
+        width: 100%;
+        max-width: 65rem;
+        background-color: aliceblue;
+    }
+
+    &--button {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.btn-close {
+    width: 4rem;
+    height: 3rem;
+    border-radius: 40%;
+}
+
+//forms
+
+.form {
+    display: block;
+    border: 1px solid $secondary-grey;
+    
+    &--create-personal {
+        width: 55rem;
+        height: 14rem;
+        padding-top: 4rem;
+        
+        background-color: #1B0E35;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column nowrap;
+    }
+}
+
+
+.input {
+    display: inline-block;
+    border: 1px solid $secondary-grey;
+
+    &:active,
+    &:focus {
+        outline: none;
+    }
+
+    &--personal-names {
+        width: 15rem;
+        height: 2rem;
+        order: 0;
+    }
+
+}
+
+.select {
+    display: inline-block;
+
+    &:active,
+    &:focus {
+        outline: none;     
+    }
+
+    &--personal-role {
+        width: 8rem;
+        height: 2rem;
+        order: 1;
+    }
+}

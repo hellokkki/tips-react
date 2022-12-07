@@ -1,11 +1,14 @@
 // import logo from './logo.svg';
 import './App.css';
-import React, {Component} from 'react';
-import BtnCreatePersonal from './components.js';
+import React from 'react';
+import Modal from './components/Modal'
+import { CreatePersonalForm } from './components/components';
+import { useState } from 'react';
 import Calendar from 'react-calendar';
 
- class App extends Component {
- render () { 
+const App = () => {
+  const [buttonModal, setButtonModal] = useState(false)
+
   return (
     <div className="App">
     <div className="wrapper">
@@ -14,17 +17,28 @@ import Calendar from 'react-calendar';
        <p>Hello! this is my little app for counting tips. <br /> There you can do it for all team! Just hit the button to start</p>
       </div>
       <div className="header--right">
-      <BtnCreatePersonal />
+       <button onClick={() => setButtonModal(true)}>create restaraunt!</button>
       </div>
     </header>
+    <main>
     <div className="block--calendar">
-     
+     <Calendar />
+    </div>
+    </main>
+      <Modal 
+    trigger={buttonModal}
+    setTrigger={setButtonModal}
+    >
+      <CreatePersonalForm />
+      </Modal>
     </div>
     </div>
-    </div>
-  );
+  )
  }
-}
+
+
+
+
 
 // function PersonalCreate() {
 //   return (
