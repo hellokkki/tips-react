@@ -15,6 +15,7 @@ export class CreatePersonalForm extends Component {
              <option>barmen</option>
              <option>hostes</option>
            </select>
+           <button className="btn btn--create-person"></button>
           </form> 
        </div>
      )

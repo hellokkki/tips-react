@@ -8,7 +8,7 @@ function Modal(props) {
     <div className='modal'>
         <div className='modal--container'>
         <div className='modal--button'>
-            <button className='btn-close' onClick={() => props.setTrigger(false)}>
+            <button className='btn btn-close' onClick={() => props.setTrigger(false)}>
              close
             </button>
         </div>

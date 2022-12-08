@@ -4,4 +4,26 @@
     cursor: pointer;
     text-align: center;
     text-decoration: none;
+    outline: none;
+
+    &--create-restaraunt {
+        width: 15rem;
+        height: 6rem;
+        border-radius: 7rem;
+
+        background-color: #965C11;
+        transition: all 1.2s ease-in-out;
+
+        &:hover {
+            transform: translateY(-1.5rem);
+        }
+    }
+
+    &--open-calendar {
+        text-align: center;
+        width: 3rem;
+        height: 3rem;
+        border-radius: 80%;
+        float: right;
+    }
 }

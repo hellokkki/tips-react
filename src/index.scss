@@ -2,6 +2,7 @@
 @import 'scss/variables.scss';
 @import 'scss/forms.scss';
 @import 'scss/buttons.scss';
+@import 'scss/elements.scss';
 
 body {
   margin: 0;
@@ -24,20 +25,13 @@ html {
 }
 
 
-
 .wrapper {
   max-width: 108rem;
-  border: 1px solid $secondary-grey;
+  height: 100%;
   padding: 3rem;
+
 
   margin: 0 auto;
   position: relative;
 }
 
-.block--create-personal {
-  width: 50rem;
-  height: 40rem;
-  background-color: black;
-
-  z-index: 9;
-}

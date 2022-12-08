@@ -4,6 +4,7 @@ import React from 'react';
 import Modal from './components/Modal'
 import { CreatePersonalForm } from './components/components';
 import { useState } from 'react';
+import Drop from './components/Drops';
 import Calendar from 'react-calendar';
 
 const App = () => {
@@ -14,15 +15,22 @@ const App = () => {
     <div className="wrapper">
     <header className="header d-flex justify-between">
       <div className="header--left">
-       <p>Hello! this is my little app for counting tips. <br /> There you can do it for all team! Just hit the button to start</p>
+       <h3>Hello! this is my little app for counting tips. <br /> There you can do it for all team! Just hit the button to start</h3>
       </div>
       <div className="header--right">
-       <button onClick={() => setButtonModal(true)}>create restaraunt!</button>
+       <button onClick={() => setButtonModal(true)} className="btn btn--create-restaraunt">create restaraunt!</button>
       </div>
     </header>
-    <main>
+    <main className="main">
     <div className="block--calendar">
-     <Calendar />
+     <div className="block--calendar__text">
+     <p className="text">there is a place where you can pick up dates to counting</p>
+     </div>
+    <div className="block--calendar__button">
+    <Drop>
+      <Calendar />
+    </Drop>
+    </div>
     </div>
     </main>
       <Modal 
